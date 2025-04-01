@@ -1,0 +1,217 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bodyFetch{
+  border-radius: 5px;
+  border: 3px solid green;
+  height: fit-content;
+  min-width: 500px;
+}
+
+.titleFetch{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  vertical-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.title span{
+  font-weight: 800;
+  color: green;
+}
+
+.buttonFetch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.arrow {
+  background-color: transparent;
+  fill: white;
+  height: 15px;
+  width: 15px;
+}
+
+.transform {
+  transform: rotate(180deg);
+}
+
+.buttonFetch button{
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.buttonFetch button:hover{
+  border: 1px solid lightgray;
+}
+
+.buttonFetch button:active{
+  border: 1px solid lightgray;
+}
+
+.buttonFetch button:focus{
+  border: 1px solid lightgray;
+}
+
+.moreContainer{
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreContainer p{
+  width: 100%;
+  text-align: start;
+  margin: 0px;
+}
+
+.moreContainer textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 5px;
+}
+
+.moreContainer button{
+  width: 100%;
+  background-color: green;
+  color: white;
+}
+
+.moreContainer button:hover{
+  background-color: darkgreen;
+}
+
+.resultBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resultBlock p{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.table{
+  min-width: 500px;
+  width: 100%;
+  border-collapse: collapse;
+  height: max-content;
+}
+
+.table th, td{
+  border: 1px solid grey;
+  padding: 8px;
+  text-align: left;
+}
+
+.descTable {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.backgroundModal{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modalContainer{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modalContainer span{
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 15px;
+}
+
+.modalContainer p{
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputContainer input{
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer button {
+  background-color: lightgray;
+  font-weight: 400;
+}
+
+.buttonContainer button:hover {
+  background-color: gray;
+  border: none;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
